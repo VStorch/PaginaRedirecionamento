@@ -25,11 +25,27 @@
             text-align: center;
         }
     </style>
+    <script>
+        window.onload = function () {
+            const appScheme = "torchapp://abrir";
+
+            // Link do repositório do GitHub de modo temporário
+            const fallBackUrl = "https://github.com/VStorch/TorchApp";
+
+            document.getElementById("appLink").href = appScheme;
+            
+            window.location.href = appScheme;
+            
+            setTimeout(function () {
+                window.location.href = fallBackUrl;
+            }, 3000);
+        };
+    </script>
 </head>
 <body>
     <p id="p1">Redirecionando para o app...</p>
     <p id="p2">Se o app não abrir automaticamente, clique aqui:
-        <a id="appLink" href="#">Abrir app</a>
+        <a id="appLink" href="torchapp://abrir">Abrir app</a>
     </p>
 </body>
 </html>
