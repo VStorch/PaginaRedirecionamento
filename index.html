@@ -31,14 +31,14 @@
             const params = new URLSearchParams(window.location.search);
             const token = params.get("token");
 
-            const appScheme = "torchapp://abrir" + (token ? "?token=" + encodeURIComponent(token) : "");
+            const appLink = "torchapp://reset-password" + (token ? "?token=" + encodeURIComponent(token) : "");
 
             // Link do repositório do GitHub de modo temporário
             const fallBackUrl = "https://github.com/VStorch/TorchApp";
 
-            document.getElementById("appLink").href = appScheme;
+            document.getElementById("appLink").href = appLink;
             
-            window.location.href = appScheme;
+            window.location.href = appLink;
             
             setTimeout(function () {
                 window.location.href = fallBackUrl;
