@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Redirecionamento</title>
+    <title>Redirecionamento - Torch</title>
     <style>
         * {
             margin: 0;
@@ -13,6 +13,7 @@
             font-family: sans-serif;
             font-size: larger;
             height: 100vh;
+            background-color: #EBDD6C;
         }
         #p1 {
             margin: 2rem;
@@ -24,22 +25,33 @@
             margin-top: 10vh;
             text-align: center;
         }
+        a {
+            color: #ff6600;
+            font-weight: bold;
+        }
     </style>
     <script>
         window.onload = function () {
-            // Captura o token da URL
             const params = new URLSearchParams(window.location.search);
             const token = params.get("token");
+            const email = params.get("email");
 
-            const appLink = "torchapp://reset-password" + (token ? "?token=" + encodeURIComponent(token) : "");
+            let appLink = "torchapp://reset-password";
+            if (token || email) {
+                appLink += "?";
+                if (token) appLink += "token=" + encodeURIComponent(token);
+                if (token && email) appLink += "&";
+                if (email) appLink += "email=" + encodeURIComponent(email);
+            }
 
-            // Link do repositório do GitHub de modo temporário
             const fallBackUrl = "https://github.com/VStorch/TorchApp";
 
             document.getElementById("appLink").href = appLink;
             
+            // Tenta abrir o app
             window.location.href = appLink;
             
+            // Se não funcionar, redireciona após 3 segundos
             setTimeout(function () {
                 window.location.href = fallBackUrl;
             }, 3000);
@@ -47,9 +59,9 @@
     </script>
 </head>
 <body>
-    <p id="p1">Redirecionando para o app...</p>
+    <p id="p1">🔥 Redirecionando para o Torch App...</p>
     <p id="p2">Se o app não abrir automaticamente, clique aqui:
-        <a id="appLink" href="torchapp://abrir">Abrir app</a>
+        <a id="appLink" href="torchapp://reset-password">Abrir Torch App</a>
     </p>
 </body>
 </html>
