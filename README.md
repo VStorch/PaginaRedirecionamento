@@ -1,6 +1,6 @@
 # TorchApp - Página de Redirecionamento 🐾
 
-Página de redirecionamento para o deep link em Flutter do TorchApp.
+Página de redirecionamento para o deep link no TorchApp.
 
 O repositório do Frontend está disponível [aqui.](https://github.com/VStorch/TorchApp)
 
