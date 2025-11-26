@@ -1,13 +1,42 @@
-# TorchApp - Página de Redirecionamento 🐾
-
-Página de redirecionamento para o deep link no TorchApp.
-
-O repositório do Frontend está disponível [aqui.](https://github.com/VStorch/TorchApp)
-
-O repositório do backend está disponível [aqui.](https://github.com/VStorch/TorchAppBackend)
-
-**Descrição do software:** O TorchApp é um aplicativo móvel desenvolvido para facilitar o agendamento de horários em Pet Shops. Com uma interface intuitiva, o app permite que os usuários agendem rapidamente serviços para seus animais de estimação, enquanto os Pet Shops podem gerenciar seus horários de forma eficiente. O objetivo é proporcionar agilidade tanto para os clientes quanto para os fornecedores de serviços.
+<img src = "docs/imgs/torch_logo.png" alt = "Logo Torch" width = "350">
 
 ---
 
-**Estágio do projeto:** Em desenvolvimento.
+# Página de Redirecionamento 🐾
+
+Página de redirecionamento para o deep link no Torch.<br>
+O repositório do Frontend está disponível [aqui.](https://github.com/VStorch/TorchApp)<br>
+O repositório do backend está disponível [aqui.](https://github.com/VStorch/TorchAppBackend)
+
+---
+
+### Descrição
+
+O Torch é um aplicativo móvel desenvolvido para facilitar o agendamento de horários em Pet Shops. Com uma interface intuitiva, o app permite que os usuários agendem rapidamente serviços para seus animais de estimação, enquanto os Pet Shops podem gerenciar seus horários de forma eficiente. O objetivo é proporcionar agilidade tanto para os clientes quanto para os fornecedores de serviços.
+
+---
+
+### Funcionalidade
+
+1. Deep Link para redefinição de senha
+
+    - Quando o usuário acessar o link de redefinição de senha, a página irá capturar os parâmetros **token** e **email**  da URL e tentar abrir com o link correspondente.
+
+2. Fallback para o caso de falha
+
+    - Se o app não estiver instalado ou o deep link não funcionar, o usuário será redirecionado automaticamente para a URL de fallback, no caso o repositório do frontend.
+
+---
+
+### Tecnologias e Dependências
+
+- HTML5
+- JavaScript
+- CSS
+
+---
+
+### Estágio do projeto
+
+Em desenvolvimento.
+ 
