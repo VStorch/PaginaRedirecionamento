@@ -36,6 +36,20 @@ O Torch é um aplicativo móvel desenvolvido para facilitar o agendamento de hor
 
 ---
 
+### Desenvolvedores
+
+- [João Pedro Pitz](https://github.com/joaopedropitzz)
+- [Leonardo Cortelim dos Santos](https://github.com/LeonardoCortelim)
+- [Vinícius Storch](https://github.com/VStorch)
+
+---
+
+### Documentação do Software
+
+Acesse a documentação em: [Torch](https://docs.google.com/document/d/1rGbcGYY655Smcz7teA9VlWOLTOMnTLguNPUWll94FlI/edit?tab=t.0)
+
+---
+
 ### Estágio do projeto
 
 Em desenvolvimento.
