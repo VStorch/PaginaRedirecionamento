@@ -44,6 +44,23 @@ O Torch é um aplicativo móvel desenvolvido para facilitar o agendamento de hor
 
 ---
 
+### Vídeo de Demonstração
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=xfTUIMbSeD0" target="_blank">
+    <img src="https://img.youtube.com/vi/xfTUIMbSeD0/maxresdefault.jpg" 
+         alt="Vídeo de Demonstração Torch"
+         width="700">
+  </a>
+</p>
+
+<p align="center">Clique na imagem para assistir no YouTube</p>
+<p align="center">
+  <sub>Vídeo sem áudio • gravação por Leonardo Cortelim dos Santos</sub>
+</p>
+
+---
+
 ### Documentação do Software
 
 Acesse a documentação em: [Torch](https://docs.google.com/document/d/1rGbcGYY655Smcz7teA9VlWOLTOMnTLguNPUWll94FlI/edit?tab=t.0)
