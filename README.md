@@ -6,7 +6,21 @@
 
 Página de redirecionamento para o deep link no Torch.<br>
 O repositório do Frontend está disponível [aqui.](https://github.com/VStorch/TorchApp)<br>
-O repositório do backend está disponível [aqui.](https://github.com/VStorch/TorchAppBackend)
+O repositório do backend está disponível [aqui.](https://github.com/VStorch/TorchAppBackend)<br>
+Os diagramas de arquitetura e banco de dados estão disponíveis na documentação do software.
+
+---
+
+### Índice
+
+- [Descrição](#descrição)
+- [Funcionalidade](#funcionalidade)
+- [Como Funciona](#como-funciona)
+- [Tecnologias e Dependências](#tecnologias-e-dependências)
+- [Desenvolvedores](#desenvolvedores)
+- [Vídeo de Demonstração](#vídeo-de-demonstração)
+- [Documentação do Software](#documentação-do-software)
+- [Status do projeto](#status-do-projeto)
 
 ---
 
@@ -28,11 +42,29 @@ O Torch é um aplicativo móvel desenvolvido para facilitar o agendamento de hor
 
 ---
 
+### Como Funciona
+
+1. O Backend gera um token e manda ele por email junto com o link para esta página: https://vstorch.github.io/PaginaRedirecionamento
+
+2. Ao acessar o link, o JavaScript extrai os parâmetros da URL (token e email).
+
+3. A página tenta abrir o aplicativo por meio de um deep link customizado.
+
+4. O sistema operacional (Android) identifica o app associado e abre diretamente na tela de redefinição de senha.
+
+5. Caso o aplicativo não esteja instalado, o usuário é redirecionado automaticamente para uma página de fallback.
+
+---
+
 ### Tecnologias e Dependências
 
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
+
 - HTML5
-- JavaScript
 - CSS
+- JavaScript
 
 ---
 
@@ -67,7 +99,6 @@ Acesse a documentação em: [Torch](https://docs.google.com/document/d/1rGbcGYY6
 
 ---
 
-### Estágio do projeto
+### Status do projeto
 
-Em desenvolvimento.
- 
+Projeto concluído para fins acadêmicos, com possibilidade de evolução futura. 
